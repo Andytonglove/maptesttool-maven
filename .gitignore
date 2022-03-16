@@ -3,3 +3,6 @@
 
 # 忽略jar包
 *.jar
+
+# 忽略target文件夹
+target/
