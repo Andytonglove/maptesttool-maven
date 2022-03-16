@@ -28,8 +28,9 @@ The workspace contains two major function by default, where:
 - `GeoTools`：https://www.geotools.org/ 
   `version`：27-SNAPSHOT
 
-- `How to run it`：clone, then build this project in the type of Maven, run main. Or you can directly run the jar provided.
+- `How to run it`：Clone, then build this project in the type of Maven, run main. Or you can directly run the jar provided.
 
+- `Want to konw more`：See in `pom.xml`.
 
 ## Information
 
