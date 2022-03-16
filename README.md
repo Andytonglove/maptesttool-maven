@@ -26,11 +26,12 @@ The workspace contains two major function by default, where:
 ## Dependence and Tips
 
 - `GeoTools`：https://www.geotools.org/ 
-  `version`：geotools-26.3-bin.zip
+  `version`：27-SNAPSHOT
 
-- `How to run it`：clone, and new folders named `/bin` and `/lib`, import `GeoTools` jar mentioned before (or you can use Maven) into the folder `/lib` and run main.
+- `How to run it`：clone, then build this project in the type of Maven, run main. Or you can directly run the jar provided.
+
 
 ## Information
 
 > Using Java, developed in VSCode, built in Maven, by Guan, Doing.
-> Github: https://github.com/Andytonglove/MapTestTool
+> Github: https://github.com/Andytonglove/maptesttool-maven
