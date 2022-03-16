@@ -1,0 +1,8 @@
+# 忽略git文件夹
+.git/
+
+# 忽略target文件夹下的数据文件
+target/
+
+# 忽略jar包
+*.jar
