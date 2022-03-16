@@ -350,7 +350,7 @@ public class MapTestTool {
                 // DONE 查找文件
                 int[] ErrorsCnt = { 0, 0 }; // 错误上报数量的计数值，第二个是一个找到个数的计数值
                 String itemSearchString[] = new String[100]; // 这里暂时先写死，查100条
-                String dir = System.getProperty("user.dir"); // 获取当前路径，打开文件
+                String dir = System.getProperty("user.dir"); // 获取当前路径，打开文件，这里相对路径是项目主文件夹下地址，jar也可
                 String filepath = dir + "/Errors.txt";
                 MyreadFileItems(filepath, itemSearchString, ErrorsCnt);
                 System.out.println(ErrorsCnt[0]);
