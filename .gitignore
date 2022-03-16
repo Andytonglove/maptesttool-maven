@@ -1,8 +1,5 @@
 # 忽略git文件夹
 .git/
 
-# 忽略target文件夹
-target/
-
 # 忽略jar包
 *.jar
