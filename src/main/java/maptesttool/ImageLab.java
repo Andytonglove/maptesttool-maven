@@ -26,6 +26,7 @@ import org.geotools.map.GridReaderLayer;
 import org.geotools.map.Layer;
 import org.geotools.map.MapContent;
 import org.geotools.map.StyleLayer;
+import org.geotools.referencing.crs.DefaultGeographicCRS;
 import org.geotools.styling.ChannelSelection;
 import org.geotools.styling.ContrastEnhancement;
 import org.geotools.styling.RasterSymbolizer;
@@ -100,6 +101,7 @@ public class ImageLab {
         Hints hints = new Hints();
         if (format instanceof GeoTiffFormat) {
             hints = new Hints(Hints.FORCE_LONGITUDE_FIRST_AXIS_ORDER, Boolean.TRUE);
+            hints.add(new Hints(Hints.DEFAULT_COORDINATE_REFERENCE_SYSTEM, DefaultGeographicCRS.WGS84)); // 加上坐标系不然读不出来！！！
         }
         reader = format.getReader(rasterFile, hints);
 
