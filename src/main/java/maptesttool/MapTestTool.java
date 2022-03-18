@@ -171,6 +171,8 @@ public class MapTestTool {
                         "地图显示按钮提示",
                         JOptionPane.YES_NO_CANCEL_OPTION,
                         JOptionPane.QUESTION_MESSAGE, null, fileType, fileType[0]);
+
+                // TODO 同一页面内部展示地图，重构包括tiff和shp
                 if (cho == 0) {
                     // 矢量地图文件：shp文件展示，利用geotools
 
@@ -213,7 +215,6 @@ public class MapTestTool {
                 } else if (cho == 1) {
                     // 栅格地图文件：tif文件展示，利用geotools
 
-                    // FIXME tif展示 存在展示卡加载的问题
                     GeoTiffLab me = new GeoTiffLab();
                     try {
                         String tifPath = me.getTiffLayersAndDisplay();
