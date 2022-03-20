@@ -362,7 +362,11 @@ public class MapTestTool {
                         System.out.println(i);
                         ErrorsCnt[1]++;
                         JOptionPane.showMessageDialog(null,
-                                "您的搜索存在于第" + i + "条搜索记录中。\n" + "相关错误提交结果是：" + itemSearchString[i], "相关搜索结果",
+                                "您的搜索存在于第" + i + "条搜索记录中。\n" + "相关错误提交结果是：\n"
+                                        + "错误位置：" + itemSearchString[i].split("&")[0] + "\n"
+                                        + "错误类型：" + itemSearchString[i].split("&")[1] + "\n"
+                                        + "错误描述：" + itemSearchString[i].split("&")[2],
+                                "相关搜索结果",
                                 JOptionPane.PLAIN_MESSAGE,
                                 imageIcon_menu);
                         cntRecord[0] = i; // 把其赋给全局变量来记录
