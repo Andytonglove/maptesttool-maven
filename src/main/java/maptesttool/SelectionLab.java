@@ -158,6 +158,9 @@ public class SelectionLab {
         mapFrame.setSize(600, 600);
         mapFrame.setVisible(true);
         mapFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // 这里加上这一句以销毁窗口！
+
+        // TODO 创建一个水平方向的分割面板
+        // final JSplitPane hSplitPane = new JSplitPane();
     }
     // docs end display shapefile
 
