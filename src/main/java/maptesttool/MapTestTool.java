@@ -556,7 +556,10 @@ public class MapTestTool {
         ActionListener listenUploadListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (e.getSource() == item5) {
-                    JOptionPane.showMessageDialog(null, "请通过在界面中标识选择，点击查看坐标进行输入上报", "错误标识上报", JOptionPane.PLAIN_MESSAGE,
+                    JOptionPane.showMessageDialog(null, "请通过在界面中标识选择，通过SELECT模式点击选择地址，\n"
+                            + "工具将会自动自动获取标识位置并填入；或者点击查看坐标进行输入上报。",
+                            "错误标识上报",
+                            JOptionPane.PLAIN_MESSAGE,
                             imageIcon_menu);
                     // DONE 利用geotools的SelectionLab示例，支持shp
                     SelectionLab me = new SelectionLab();
